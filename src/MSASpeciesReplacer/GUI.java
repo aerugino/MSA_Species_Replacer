@@ -203,7 +203,7 @@ public class GUI extends javax.swing.JFrame {
         {
             if(replacementTableFile != null && replacementTableFile.exists())
             {
-                if(outputFile != null && outputFile.canWrite())
+                if(outputFile != null)
                 {
                  Replacer replace = new Replacer(inputFile, replacementTableFile, outputFile);
                  JOptionPane.showMessageDialog(this, "Done!");   
